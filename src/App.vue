@@ -77,6 +77,16 @@
         ]
       }
     },
+    mounted(){
+      /* 获取省对象*/
+      var mainDirection = document.getElementById("mainDirection");
+      var SecDirection = document.getElementById("SecDirection");
+      /*实例化组*/
+      for (let i = 0; i < this.mainData.length; i++) {
+        var option = new Option(this.mainData[i], i);
+        mainDirection.appendChild(option);
+      }
+    },
     methods: {
       getUEContent() {
           /* 获取省对象*/
@@ -114,15 +124,8 @@
 
       },
       changeText() {
-        /* 获取省对象*/
         var mainDirection = document.getElementById("mainDirection");
         var SecDirection = document.getElementById("SecDirection");
-        /*实例化组*/
-        for (let i = 0; i < this.mainData.length; i++) {
-          var option = new Option(this.mainData[i], i);
-          mainDirection.appendChild(option);
-        }
-//        console.log(mainDirection);
         //清空
         SecDirection.options.length = 1;
         //获取选择框的value值
