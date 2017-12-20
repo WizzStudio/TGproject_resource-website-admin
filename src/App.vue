@@ -111,14 +111,15 @@
             'sub_tag': sub_tag,
             'content': content
           };
-          this.$http.post("http://127.0.0.1:8000/post_a/", postData, {
+          var postJson = JSON.stringify(postData);
+          this.$http.post("http://127.0.0.1:8000/post_a/", postJson, {
               headers: {"Content-Type": "application/json"}
           })
             .then( res => {
               console.log(res.data)
             })
             .catch(err => {
-              console.log(err)
+              console.log(err);
             })
 //          $.post("http://127.0.0.1:8000/post_a/",{"tag":"1","sub_tag":"2","content":"sf"}, function(ret){$('#result').html(ret.result)});
 
