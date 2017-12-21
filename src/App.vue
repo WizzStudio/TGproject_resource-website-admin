@@ -17,13 +17,13 @@
       <div class="row container">
         <div class="alert alert-success alert-dismissible col-md-6" role="alert">
           <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h5>后台管理注意事项 <small>请在第一段文字写下标题</small></h5>
+          <h5>后台管理注意事项 <br><small>我们默认遵守如下约定：请在第一段文字写下标题，请在第二段文字写下介绍内容</small></h5>
         </div>
 
 
         <div class="alert alert-info alert-dismissible col-md-6" role="alert">
           <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h5>后台管理注意事项 <small>请在第二段文字写下介绍内容</small></h5>
+          <h5>后台管理注意事项 <br><small>请在前两段文字后放置图片，请在图片后放置分享链接</small></h5>
         </div>
       </div>
 
