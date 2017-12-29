@@ -112,7 +112,7 @@
             'content': content
           };
           var postJson = JSON.stringify(postData);
-          this.$http.post("http://127.0.0.1:8000/post_a/", postJson, {
+          this.$http.post("http://study.fenlan96.com/post_a/", postJson, {
               headers: {"Content-Type": "application/json"}
           })
             .then( res => {
